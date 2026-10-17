@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d1 {
+    width: 100%;
+    height: 85vh;
+    background-image: url("../assets/images/flowers/pexels-cileklipalet-34463058.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.hero{
+        background-color: rgba(255, 255, 255, 0.80);
+        padding: 35px;
+        max-width: 520px;
+}
+.hero h1{
+        font-size: 45px;
+        color: #493b3f;
+        font-family: Georgia,serif;
+        margin-bottom: 18px;
+}
+.hero p{
+        font-size: 18px;
+        color:#493b3f;
+        margin-bottom: 25px;
+}
+
+.contact-icon {
+    color: #493b3f;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.contact-icon:hover {
+    color: #c96f8a;
+    text-decoration: none;
+}
+.navbar{
+        background-color: #fff9f5 !important;
+        padding: 15px;
+}
+.navbar-brand{
+        color: #493b3f !important;
+        font-family: Georgia,serif;
+        font-size: 24px;
+        font-weight: bold;
+}
+.nav-link{
+        color: #493b3f !important;
+        margin: 0px;
+}
+.nav-link:hover{
+        color: #c96f8a !important;
+}
+.btn-primary{
+        background-color: #c96f8a;
+        border-color: #c96f8a;
+}
+.btn-primary:hover{
+        background-color: #a95670;
+        border-color: #a95670;
+}
+.hero .btn-outline-dark{
+        color: #493b3f;
+        border-color: #493b3f;
+}
+.hero .btn-outline-dark:hover{
+        background-color: #493b3f;
+        color:white
+}
+
+@media (max-width: 768px){
+
+.d1{
+        min-width: 80vh;
+        padding: 30px;
+        justify-content: center;
+        background-position: center;
+}
+.hero{
+        max-width: 100%;
+        padding: 25px;
+}
+.hero h1{
+        font-size: 35px;
+}
+.hero p{
+        font-size: 16px;
+}
+}
+
+/* categories */
+.categories{
+        padding: 70px 0;
+        background-color: #fff9f5;
+}
+.categories h2{
+        text-align: center;
+        color: #493b3f;
+        font-family: Georgia,serif;
+        margin-bottom: 40px;
+}
+.categories .card{
+        border: none;
+        overflow: hidden;
+        background-color: white;
+}
+.categories .card-img-top{
+        height: 280px;
+        object-fit: cover;
+}
+.categories .card-body{
+        text-align: center;
+        padding: 25px;
+}
+.categories .card-title{
+        color: #493b3f;
+        font-family: Georgia,serif;
+}
+.categories .card:hover{
+        transform: translateY(-5px);
+}
+
+/* why floretique */
+.why-floretique{
+        padding: 70px 0;
+        background-color: #fff;
+}
+.why-floretique h2{
+        text-align: center;
+        color: #493b3f;
+        font-family: Georgia,serif;
+        margin-bottom: 45px;
+}
+.why-box{
+        text-align: center;
+        padding: 30px 20px;
+}
+.why-box h3{
+        color: #c96f8a;
+        font-family: Georgia,serif;
+        margin-bottom: 15px;
+}
+.why-box p{
+        color: #493b3f;
+}
+.why-icon {
+    font-size: 40px;
+    color: #c96f8a;
+    margin-bottom: 10px;
+}
+
+/* contact-cta */
+.contact-cta{
+        text-align: center;
+        padding: 70px 20px;
+        background-color: #fff9f5;
+}
+.contact-cta h2{
+        color: #493b3f;
+        font-family: Georgia,serif;
+        margin-bottom: 15px;
+}
+.contact-cta p{
+        color: #493b3f;
+        margin-bottom: 45px;
+}
+
+/* common-footer */
+.site-footer{
+        background: #493b3f;
+        color: #fff9f5;
+        padding: 40px 0 15px;
+}
+
+.site-footer a{
+        color:#e8b8bd;
+        text-decoration: none;
+}
+.site-footer a:hover{
+        color: white;
+}
+.site-footer h4,.site-footer h5{
+        margin-bottom: 15px;
+}
+
+.copyright{
+        text-align: center;
+        font-size: 15px;
+}

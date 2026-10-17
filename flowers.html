@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f55e84ca22.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Flowers|Floretique</title>
+    
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flower-hero{
+         min-height: 85vh;
+         background-image: url("assets/images/flowers/pexels-eugenia-remark-5767088-15791187.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         display: flex;
+         align-items: center;
+         padding: 50px;
+}
+.flower-hero-content{
+        max-width: 520px;
+        padding: 25px;
+}
+.flower-hero-content h2{
+        font-size: 45px;
+        color:#fff9f5;
+        font-family: Georgia,serif;
+        margin-bottom: 18px;
+}
+.flower-hero-content p{
+        font-size: 18px;
+        color:#fff9f5;
+        margin-bottom: 25px;
+}
+.flowers-categories .card-body .btn{
+  margin: auto;
+  align-self: flex-start;
+}
+
+.flowers-categories {
+    background: #fff9f5;
+    padding: 60px 0;
+}
+
+.flowers-categories h2 {
+    font-family: Georgia, serif;
+    color: #493b3f;
+    text-align: center;
+}
+.flowers-categories .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.flowers-categories .card {
+    height: 100%;
+}
+
+.flowers-categories .card:hover{
+        transform: translateY(-5px);
+}
+
+.best-selling{
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.best-selling h2{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #493b3f;
+}
+.section-text{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.best-selling .card-img-top{
+  height: 250px;
+  object-fit: cover;
+}
+.best-selling .card{
+  height: 100%;
+  transition: 0.3s;
+}
+.best-selling .card:hover{
+  transform: translateY(-5px);
+}
+
+.flower-collection{
+  background-color: #fff9f5;
+  padding: 60px 0;
+}
+.flower-collection h2{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #493b3f;
+}
+.flower-item{
+  background: white;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  transition:0.3s;
+}
+.flower-item img{
+  width: 100%;
+  height:230px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom:15px;
+}
+.flower-item h5{
+  color: #493b3f;
+}
+.flower-hero p{
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.flower-item strong{
+  color: #a64d63;
+}
+.flower-item:hover {
+    transform: translateY(-5px);
+}
+
+.flower-banner{
+  background: #493b3f;
+  color: #fff9f5;
+  text-align: center;
+  padding: 70px 20px;
+}
+.flower-banner h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.flower-banner p{
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    text-align: center;
+    /* line-height: 1.7; */
+}
+
+.flower-buy-btn{
+  background: #a64d63;
+  color: white;
+  margin-top: 12px;
+}
+.flower-buy-btn:hover{
+  background: #493b3f;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">  FLORETIQUE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="flowers.html">Flowers</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Delicacies
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="delicacies.html">ALL Delicacies</a>
+          <a class="dropdown-item" href="#">Cakes & Cheesecakes</a>
+          <a class="dropdown-item" href="#">Chocolates</a>
+          <a class="dropdown-item" href="#">Pastries</a>
+          <a class="dropdown-item" href="#">Cookies & Biscuits</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="gifts.html" >Gifts</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="occasions.html" >Occasions</a>
+      </li>
+
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="about.html" >About</a>
+      </li> -->
+    </ul>
+    <a href="contact.html" class="contact-icon" title="Contact Us">
+    <i class="fa-solid fa-circle-user"></i>
+    </a>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search flowers ,gifts..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<section class="flower-hero">
+    <div class="flower-hero-content">
+        <h2>A Little Bloom Goes a <br>
+            Long Way</h2>
+        <p>
+            Every flower tells a story. Discover beautiful
+            bouquets and delicate blooms made for life's
+            sweetest moments.
+        </p>
+         <a href="#flower-categories" class="btn btn-primary">SHOP FLOWERS</a>
+    </div>
+</section>
+
+<section class="flowers-categories" id="flower-categories">
+  <div class="container">
+    <h2>Explore Our Blooms</h2>
+    <p style="text-align: center;"><i>Find the perfect flowers for every feeling.</i></p>
+   
+   
+  <div class="row">
+
+    <div class="col-md-3 mb-4">
+    <div class="card">
+    <img src="assets/images/flowers/pexels-sofia-kondratiuk-2148940187-30350898.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Roses</h5>
+    <p class="card-text">Classic blooms that express love.</p>
+    <a href="#flower-collection" class="btn btn-primary">Explore More</a>
+  </div>
+  </div>
+  </div>
+ 
+
+  
+  <div class="col-md-3 mb-4">
+  <div class="card" >
+  <img src="assets/images/flowers/pexels-alexandra-matviets-101599139-20567476.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tulips</h5>
+    <p class="card-text">Delicate blooms in beautiful colours.</p>
+    <a href="#flower-collection" class="btn btn-primary">Explore More</a>
+  </div>
+  </div>
+  </div>
+ 
+
+ 
+    <div class="col-md-3 mb-4">
+  <div class="card">
+  <img src="assets/images/flowers/pexels-anna-nekrashevich-7214591.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Lilies</h5>
+    <p class="card-text">Elegant flowers for thoughtful moments.</p>
+    <a href="#flower-collection" class="btn btn-primary">Explore More</a>
+  </div>
+  </div>
+  </div>
+ 
+
+
+  
+    <div class="col-md-3 mb-4">
+  <div class="card" >
+  <img src="assets/images/flowers/pexels-eugenia-remark-5767088-15791190.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mixed Bouquets</h5>
+    <p class="card-text">A lovely mix for every occasion.</p>
+    <a href="#flower-collection" class="btn btn-primary">Explore More</a>
+  </div>
+  </div>
+</div>
+
+  </div>
+  </div>
+</section>
+
+
+<section class="best-selling">
+    <div class="container">
+
+        <h2>Our Bestselling Bouquets</h2>
+        <p class="section-text">Little bundles of happiness, made with love.</p>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/flowers/pexels-mlkbnl-24987510.jpg"
+                         class="card-img-top" alt="Red roses bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Red Roses</h5>
+                        <p class="card-text">A timeless way to say I love you.</p>
+                        <p><strong>₹799</strong></p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/flowers/pexels-angel-1679176354-27871590.jpg"
+                         class="card-img-top" alt="Tulip bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Pretty Pink Tulips</h5>
+                        <p class="card-text">Soft colours for beautiful moments.</p>
+                        <p><strong>₹999</strong></p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/flowers/julia-blumberg-YE900-1Y3-Y-unsplash.jpg"
+                         class="card-img-top" alt="Mixed flower bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Colourful Mix</h5>
+                        <p class="card-text">A cheerful mix for every occasion.</p>
+                        <p><strong>₹1,199</strong></p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="flower-collection" id="flower-collection">
+  <div class="container">
+    <h2>Find Your Bloom</h2>
+    <p class="section-text">A little beauty for every kind of heart.</p>
+
+
+    <div class="row">
+
+
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-theamritdev-35925261.jpg" alt="Red Roses">
+          <h5>Ravishing Roses</h5>
+          <p>Beautiful Blooms fillled with love.</p>
+          <strong>₹799</strong>
+          <br>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a>
+        </div>
+      </div>
+    
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-planka-30786293.jpg" alt="Red Roses">
+          <h5>Fresh Tulips</h5>
+          <p>Simple, colourful and graceful.</p>
+          <strong>₹899</strong>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a> 
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-rehman-yousaf-321165099-31368780.jpg" alt="Red Roses">
+          <h5>Elegant Lilies</h5>
+          <p>Flowers with a touch of elegance.</p>
+          <strong>₹999</strong>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-sumcig-20744187.jpg" alt="Red Roses">
+          <h5>Mixed Blooms</h5>
+          <p>A colourful bunch of happiness.</p>
+          <strong>₹1,199</strong>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-subhro-dey-david-1495028-32300948.jpg" alt="Red Roses">
+          <h5>Premium Sunflowers</h5>
+          <p>Classic flowers for special moments.</p>
+          <strong>₹1,499</strong>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mb-4">
+        <div class="flower-item">
+          <img src="assets/images/flowers/pexels-inas-isleem-605461132-35918654.jpg" alt="Red Roses">
+          <h5>Pure White Roses</h5>
+          <p>communicate purity and new beginnings.</p>
+          <strong>₹799</strong>
+          <br>
+          <a href="#" class="btn flower-buy-btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="flower-banner">
+  <div class="container">
+    <h2>Let Your Feelings Bloom.</h2>
+    <p>
+      Find a bouquet that says what words sometimes cannot.
+      <br>
+      Make someone's day a little more beautiful.
+    </p>
+    <a href="#flowers-categories" class="btn btn-primary">Explore our Flowers</a>
+  </div>
+</section>
+
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-md-4 mb-3">
+        <h4>FLORETIQUE 🌷</h4>
+        <p>Little blooms, beautiful feelings.</p>
+       </div>
+
+       <div class="col-md-4 mb-3">
+        <H5>Quick Links</H5>
+        <a href="index.html">Home</a><br>
+         <a href="flowers.html">Flowers</a><br>
+          <a href="delicacies.html">Delicacies</a><br>
+           <a href="gifts.html">Gifts</a><br>
+            <a href="occasions.html">Occasions</a><br>
+       </div>
+
+       <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <p>Email: hello@floretique.com</p>
+        <a href="contact.html">Get in Touch</a>
+       </div>
+
+    </div>
+    <hr>
+    <p class="copyright">© 2026 FLORETIQUE. Made with love</p>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
