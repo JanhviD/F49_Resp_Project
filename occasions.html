@@ -9,6 +9,219 @@
     <title>Occassions|Floretique</title>
     
     <style>
+     
+/* OCCASIONS HERO */
+.occasion-hero {
+    background: #fff0f3;
+    padding: 65px 0;
+    color: #493b3f;
+}
+
+.occasion-hero-text {
+    padding: 30px;
+}
+
+.occasion-tag {
+    color: #a64d63;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.occasion-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.occasion-hero h1 span {
+    color: #b75d78;
+    font-style: italic;
+}
+
+.occasion-description {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.occasion-btn {
+    background: #493b3f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.occasion-btn:hover {
+    background: #a64d63;
+    color: white;
+}
+
+.occasion-hero-img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 180px 180px 10px 10px;
+}
+
+/* OCCASION CARDS */
+.occasion-section {
+    padding: 70px 25px;
+    text-align: center;
+    background: #fff9f5;
+}
+
+.occasion-section h2 {
+    font-family: Georgia, serif;
+    color: #493b3f;
+    margin-bottom: 15px;
+}
+
+.occasion-intro {
+    color: #493b3f;
+    margin-bottom: 35px;
+}
+
+.occasion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.occasion-card {
+    width: 230px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(73, 59, 63, 0.1);
+    transition: transform 0.3s;
+}
+
+.occasion-card:hover {
+    transform: translateY(-5px);
+}
+
+.occasion-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.occasion-card h3 {
+    font-family: Georgia, serif;
+    color: #493b3f;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.occasion-card p {
+    color: #66565b;
+    line-height: 1.6;
+}
+
+/* MESSAGE SECTION */
+.occasion-message {
+    min-height: 45vh;
+    padding: 75px 20px;
+    text-align: center;
+    background: #f8e5e9;
+    color: #493b3f;
+}
+
+.occasion-message h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+.occasion-message p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.occasion-message .btn {
+    margin: 8px;
+    border-color: #493b3f;
+    color: #493b3f;
+}
+
+.occasion-message .btn:hover {
+    background: #493b3f;
+    color: white;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #493b3f;
+    color: #fff9f5;
+    padding: 40px 0 15px;
+}
+
+.site-footer h4,
+.site-footer h5 {
+    font-family: Georgia, serif;
+    margin-bottom: 18px;
+}
+
+.site-footer a {
+    color: #e8b8bd;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.site-footer hr {
+    border-color: #8b7379;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .occasion-hero {
+        padding: 35px 0;
+        text-align: center;
+    }
+
+    .occasion-hero-text {
+        padding: 20px 15px;
+    }
+
+    .occasion-hero h1 {
+        font-size: 35px;
+    }
+
+    .occasion-hero-img {
+        height: 320px;
+        margin-top: 25px;
+        border-radius: 150px 150px 10px 10px;
+    }
+
+    .occasion-section {
+        padding: 45px 15px;
+    }
+
+    .occasion-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .occasion-message {
+        padding: 55px 20px;
+    }
+}
+
 
 
 
@@ -61,16 +274,92 @@
     </form>
   </div>
 </nav>
-<section class="flower-hero">
+
+
+
+
+<!-- Creative Occasions Hero -->
+<section class="occasion-hero">
     <div class="container">
-        <h1>A Little Bloom Goes a Long Way</h1>
-        <p>
-            Every flower tells a story. Discover beautiful
-            bouquets and delicate blooms made for life's
-            sweetest moments.
-        </p>
+        <div class="row align-items-center">
+
+            <div class="col-md-6 occasion-hero-text">
+                <p class="occasion-tag">FOR EVERY LITTLE & BIG MOMENT</p>
+
+                <h1>Make Every Moment <span>Bloom</span></h1>
+
+                <p class="occasion-description">
+                    From heartfelt surprises to unforgettable celebrations,
+                    find beautiful flowers and thoughtful gifts for
+                    every story worth celebrating.
+                </p>
+
+                <a href="#all-occasions" class="btn occasion-btn">
+                    Find Your Occasion
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <img
+                    src="assets/images/gifts/pexels-sumcig-30727980.jpg"
+                    class="occasion-hero-img"
+                    alt="Beautiful flowers for special occasions">
+            </div>
+
+        </div>
     </div>
 </section>
+
+<!-- Occasions -->
+<section class="occasion-section">
+    <h2>Celebrate Every Occasion</h2>
+
+    <div class="occasion-grid">
+        <div class="occasion-card">
+            <img src="assets/images/occasions/pexels-zeynep-ongel-567494358-38543647.jpg" alt="Birthday">
+            <h3>Birthdays</h3>
+            <p>Make their day extra special.</p>
+        </div>
+
+        <div class="occasion-card">
+            <img src="assets/images/occasions/pexels-nika-benedictova-24565203-19376100.jpg" alt="Anniversary">
+            <h3>Anniversaries</h3>
+            <p>Celebrate love and togetherness.</p>
+        </div>
+
+        <div class="occasion-card">
+            <img src="assets/images/occasions/pexels-rebornfilmes-37524704.jpg" alt="Wedding">
+            <h3>Weddings</h3>
+            <p>Beautiful gifts for new beginnings.</p>
+        </div>
+
+        <div class="occasion-card">
+            <img src="assets/images/occasions/pexels-gurpreet-dhaliwal-2765575-32283148.jpg" alt="Just because">
+            <h3>Just Because</h3>
+            <p>Surprise someone for no reason at all.</p>
+        </div>
+    </div>
+</section>
+
+<section class="occasion-message">
+    <h2>Make Their Moments Memorable</h2>
+    <p>Flowers, sweet treats, and thoughtful gifts speak from the heart.</p>
+    <a href="flowers.html" class="btn btn-outline-dark">Explore Flowers</a>
+    <a href="gifts.html" class="btn btn-outline-dark">Explore Gifts</a>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer text-center">
+    <h4>FLORETIQUE 🌷</h4>
+    <p>Little blooms, beautiful feelings.</p>
+    <a href="index.html">Home</a> |
+    <a href="flowers.html">Flowers</a> |
+    <a href="delicacies.html">Delicacies</a> |
+    <a href="gifts.html">Gifts</a> |
+    <a href="occasions.html">Occasions</a>
+    <p class="copyright">© 2026 FLORETIQUE. Made with love.</p>
+</footer>
+
     
 
 

@@ -9,6 +9,136 @@
     <title>Gifts|Floretique</title>
     
     <style>
+      
+.gifts-hero {
+    background: #fff0f3;
+    padding: 60px 0;
+    text-align: center;
+    color: #493b3f;
+}
+
+.gifts-hero h1,
+.gift-categories h2,
+.gift-products h2 {
+    font-family: Georgia, serif;
+}
+
+.gifts-hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+
+.gift-categories {
+    padding: 60px 0;
+    background: #fff9f5;
+}
+
+.gift-categories h2,
+.gift-products h2 {
+    text-align: center;
+    color: #493b3f;
+    margin-bottom: 15px;
+}
+
+.gift-intro {
+    text-align: center;
+    color: #493b3f;
+    margin-bottom: 35px;
+}
+
+.gift-categories .card,
+.gift-products .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 3px 12px rgba(73, 59, 63, 0.1);
+}
+
+.gift-categories .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.gift-products {
+    padding: 60px 0;
+    background: #fff0f3;
+}
+
+.gift-products:nth-of-type(even) {
+    background: #fff9f5;
+}
+
+.gift-products .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.gift-products .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gift-products .card-title {
+    font-family: Georgia, serif;
+    color: #493b3f;
+}
+
+.gift-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a64d63;
+}
+
+.gift-products .btn {
+    margin-top: auto;
+}
+
+.gift-banner {
+    padding: 75px 20px;
+    background: #f8e5e9;
+    color: #493b3f;
+    text-align: center;
+}
+
+.gift-banner h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 18px;
+}
+
+.gift-banner p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+}
+
+.gift-categories .card:hover,
+.gift-products .card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .gifts-hero {
+        padding: 40px 15px;
+    }
+
+    .gifts-hero h1 {
+        font-size: 32px;
+    }
+
+    .gift-categories,
+    .gift-products {
+        padding: 40px 0;
+    }
+
+    .gift-products .card-img-top {
+        height: 220px;
+    }
+}
+
 
 
 
@@ -61,16 +191,357 @@
     </form>
   </div>
 </nav>
-<section class="flower-hero">
+
+
+
+
+<!-- GIFTS HERO -->
+<section class="gifts-hero">
     <div class="container">
-        <h1>A Little Bloom Goes a Long Way</h1>
+        <h1>Little Gifts, Big Happiness</h1>
         <p>
-            Every flower tells a story. Discover beautiful
-            bouquets and delicate blooms made for life's
-            sweetest moments.
+            Make every moment special with thoughtful gifts,
+            cute surprises, and beautiful little things for
+            the people who matter most.
         </p>
+        <a href="#popular-gifts" class="btn btn-outline-dark mt-3">
+            Explore Gifts
+        </a>
     </div>
 </section>
+
+<!-- GIFT CATEGORIES -->
+<section class="gift-categories">
+    <div class="container">
+        <h2>Find the Perfect Gift</h2>
+        <p class="gift-intro">
+            A little something for every person and every occasion.
+        </p>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/birthday-gift.jpg"
+                         class="card-img-top" alt="Birthday gifts">
+                    <div class="card-body text-center">
+                        <h5>Birthday Gifts</h5>
+                        <p>Make their special day memorable.</p>
+                        <a href="#birthday-gifts" class="btn btn-outline-dark">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/gift-hamper.jpg"
+                         class="card-img-top" alt="Gift hampers">
+                    <div class="card-body text-center">
+                        <h5>Gift Hampers</h5>
+                        <p>A bundle of lovely surprises.</p>
+                        <a href="#gift-hampers" class="btn btn-outline-dark">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/personalized-gift.jpg"
+                         class="card-img-top" alt="Personalized gifts">
+                    <div class="card-body text-center">
+                        <h5>Personalized Gifts</h5>
+                        <p>Gifts with a personal touch.</p>
+                        <a href="#personalized-gifts" class="btn btn-outline-dark">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/cute-gift.jpg"
+                         class="card-img-top" alt="Cute gifts">
+                    <div class="card-body text-center">
+                        <h5>Cute Little Gifts</h5>
+                        <p>Small things that bring big smiles.</p>
+                        <a href="#cute-gifts" class="btn btn-outline-dark">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- POPULAR GIFTS -->
+<section class="gift-products" id="popular-gifts">
+    <div class="container">
+        <h2>Popular Gifts</h2>
+        <p class="gift-intro">Our little collection of thoughtful surprises.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/gift-hamper.jpg" class="card-img-top" alt="Surprise gift hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Surprise Gift Hamper</h5>
+                        <p>A lovely collection of treats and surprises.</p>
+                        <p class="gift-price">₹799</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/birthday-gift.jpg" class="card-img-top" alt="Birthday surprise box">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Surprise Box</h5>
+                        <p>A cheerful box for birthday celebrations.</p>
+                        <p class="gift-price">₹599</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/personalized-gift.jpg" class="card-img-top" alt="Personalized keepsake">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalized Keepsake</h5>
+                        <p>A memorable gift made extra special.</p>
+                        <p class="gift-price">₹449</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BIRTHDAY GIFTS -->
+<section class="gift-products" id="birthday-gifts">
+    <div class="container">
+        <h2>Birthday Gifts</h2>
+        <p class="gift-intro">Celebrate another year of happiness.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/birthday-gift.jpg" class="card-img-top" alt="Birthday gift box">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Gift Box</h5>
+                        <p>A sweet surprise for a special person.</p>
+                        <p class="gift-price">₹499</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/cute-gift.jpg" class="card-img-top" alt="Birthday teddy gift">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Teddy Surprise</h5>
+                        <p>A cuddly companion for someone special.</p>
+                        <p class="gift-price">₹399</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/gift-hamper.jpg" class="card-img-top" alt="Birthday celebration hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Celebration Hamper</h5>
+                        <p>A festive collection for their big day.</p>
+                        <p class="gift-price">₹899</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GIFT HAMPERS -->
+<section class="gift-products" id="gift-hampers">
+    <div class="container">
+        <h2>Gift Hampers</h2>
+        <p class="gift-intro">Beautifully bundled gifts for every mood.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/gift-hamper.jpg" class="card-img-top" alt="Sweet treat hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Treat Hamper</h5>
+                        <p>A delightful assortment of sweet surprises.</p>
+                        <p class="gift-price">₹699</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/cute-gift.jpg" class="card-img-top" alt="Cute surprise hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Surprise Hamper</h5>
+                        <p>A little collection of adorable things.</p>
+                        <p class="gift-price">₹749</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/personalized-gift.jpg" class="card-img-top" alt="Special occasion hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Special Moments Hamper</h5>
+                        <p>A thoughtful gift for memorable occasions.</p>
+                        <p class="gift-price">₹999</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PERSONALIZED GIFTS -->
+<section class="gift-products" id="personalized-gifts">
+    <div class="container">
+        <h2>Personalized Gifts</h2>
+        <p class="gift-intro">Make your gift feel truly one of a kind.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/personalized-gift.jpg" class="card-img-top" alt="Personalized photo gift">
+                    <div class="card-body">
+                        <h5 class="card-title">Memory Photo Gift</h5>
+                        <p>Keep a favourite memory close.</p>
+                        <p class="gift-price">₹349</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/birthday-gift.jpg" class="card-img-top" alt="Personalized gift box">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Gift Box</h5>
+                        <p>A thoughtful box with your personal touch.</p>
+                        <p class="gift-price">₹549</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/gift-hamper.jpg" class="card-img-top" alt="Personalized hamper">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalized Hamper</h5>
+                        <p>A special collection chosen with care.</p>
+                        <p class="gift-price">₹899</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CUTE GIFTS -->
+<section class="gift-products" id="cute-gifts">
+    <div class="container">
+        <h2>Cute Little Gifts</h2>
+        <p class="gift-intro">Adorable surprises to brighten someone's day.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/cute-gift.jpg" class="card-img-top" alt="Cute little gift">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Keepsake</h5>
+                        <p>A small gift to keep and treasure.</p>
+                        <p class="gift-price">₹249</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/personalized-gift.jpg" class="card-img-top" alt="Mini gift set">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Gift Set</h5>
+                        <p>A tiny bundle full of happiness.</p>
+                        <p class="gift-price">₹299</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/gifts/birthday-gift.jpg" class="card-img-top" alt="Surprise gift">
+                    <div class="card-body">
+                        <h5 class="card-title">Little Surprise Box</h5>
+                        <p>A sweet way to say you care.</p>
+                        <p class="gift-price">₹199</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GIFTING BANNER -->
+<section class="gift-banner">
+    <div class="container">
+        <h2>Make Someone's Day Special</h2>
+        <p>
+            Sometimes the smallest gift carries the biggest feeling.
+            Find something lovely for someone you care about.
+        </p>
+        <a href="occasions.html" class="btn btn-outline-dark">Explore Occasions</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4>FLORETIQUE 🌷</h4>
+                <p>Little blooms, beautiful feelings.</p>
+                <p>Thoughtful gifts for life's sweetest moments.</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="flowers.html">Flowers</a></p>
+                <p><a href="delicacies.html">Delicacies</a></p>
+                <p><a href="gifts.html">Gifts</a></p>
+                <p><a href="occasions.html">Occasions</a></p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-envelope"></i> hello@floretique.com</p>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2026 FLORETIQUE. Made with love 💗</p>
+    </div>
+</footer>
+
     
 
 

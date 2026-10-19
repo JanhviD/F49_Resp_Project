@@ -9,7 +9,177 @@
     <title>Delicacies|Floretique</title>
     
     <style>
+      .delicacies-hero{
+        /* min-height: 60vh; */
+        background-color: #fff0f3;
+        /* display: flex;
+        align-items: center; */
+        text-align: left;
+        padding:50px 0;
+      }
+      .delicacies-hero .row{
+        min-height: 400px;
+      }
+      .delicacies-hero .col-md-6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .delicacies-hero h1, .delicacies-hero p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #493b3f;
+      }
+      .delicacies-hero p{
+        font-size: 18px;
+        margin:20px 0;
+      }
 
+      .delicacies-hero-img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .delicacies-hero .btn{
+        align-self: flex-start;
+        background-color: #c96f8a;
+        border-color: #c96f8a;
+      }
+      .delicacies-categories .card{
+        height: 100%;
+      }
+      .delicacies-categories .card-body{
+        display: flex;
+        flex-direction: column;
+      }
+.delicacies-categories .card-body .btn{
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.delicacies-categories {
+    background: #fff9f5;
+    padding: 60px 0;
+}
+
+.delicacies-categories h2 ,.delicacies-categories p{
+    font-family: Georgia, serif;
+    color: #493b3f;
+    text-align: center;
+}
+.delicacies-categories .card-img-top {
+    height: 175px;
+    object-fit: cover;
+}
+
+.delicacies-categories .card {
+    height: 100%;
+}
+
+.delicacies-categories .card:hover{
+        transform: translateY(-5px);
+}
+
+.delicacy-products {
+    padding: 60px 0;
+    background: #fff9f5;
+}
+
+.delicacy-products:nth-of-type(even) {
+    background: #fff0f3;
+}
+
+.delicacy-products h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #493b3f;
+    margin-bottom: 15px;
+}
+
+.delicacy-products .section-intro {
+    text-align: center;
+    color: #493b3f;
+    margin-bottom: 35px;
+}
+
+.delicacy-products .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 3px 10px rgba(73, 59, 63, 0.1);
+}
+
+.delicacy-products .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.delicacy-products .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delicacy-products .card-title {
+    font-family: Georgia, serif;
+    color: #493b3f;
+}
+
+.delicacy-price {
+    color: #a64d63;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.delicacy-products .btn {
+    margin-top: auto;
+}
+
+.site-footer {
+    background: #493b3f;
+    color: #fff9f5;
+    padding: 40px 0 15px;
+}
+
+.site-footer h4,
+.site-footer h5 {
+    margin-bottom: 18px;
+    font-family: Georgia, serif;
+}
+
+.site-footer a {
+    color: #e8b8bd;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.site-footer hr {
+    border-color: #8b7379;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .delicacy-products {
+        padding: 40px 0;
+    }
+
+    .delicacy-products .card-img-top {
+        height: 220px;
+    }
+}
 
 
     </style>
@@ -61,6 +231,470 @@
     </form>
   </div>
 </nav>
+
+<section class="delicacies-hero">
+  <div class="container">
+     <div class="row align-items-center">
+          <div class="col-md-6">
+             <h1>Something Sweet for Every Moment</h1>
+             <p>Discover little treats made to bring big smiles.</p>
+             <a href="#delicacies-collection" class="btn btn-primary">Explore Our Treats</a>
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/images/delicacies/thomas-ae-hd_MLVubH18-unsplash.jpg"
+             class="img-fluid delicacies-hero-img"
+              alt="Celebration cakes">
+          </div>
+  </div>
+  </div>
+</section>
+
+<section class="delicacies-categories">
+    <div class="container">
+            <h2>Shop by Category</h2>
+            <p>From cakes to cookies, find your favourite treat.</p>
+        
+     <div class="row">
+
+    <div class="col-md-3 mb-4">
+    <div class="card">
+    <img src="assets/images/delicacies/pexels-ivan-s-8101692.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Cakes & Cheesecakes</h5>
+    <p class="card-text">Celebrate with layers of happiness.</p>
+    <a href="#cakes" class="btn btn-primary">Explore cakes</a>
+  </div>
+  </div>
+  </div>
+ 
+
+  
+  <div class="col-md-3 mb-4">
+  <div class="card" >
+  <img src="assets/images/delicacies/pexels-nam-nguyen-2160013572-36572429.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Chocolates</h5>
+    <p class="card-text">Sweet bites for every mood.</p>
+    <a href="#chocolates" class="btn btn-primary">Explore chocolates</a>
+  </div>
+  </div>
+  </div>
+ 
+
+ 
+    <div class="col-md-3 mb-4">
+  <div class="card">
+  <img src="assets/images/delicacies/pexels-shameel-mukkath-3421394-5112529.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pastries</h5>
+    <p class="card-text">Baked fresh,always delicious.</p>
+    <a href="#pastries" class="btn btn-primary">Explore pastries</a>
+  </div>
+  </div>
+  </div>
+ 
+
+
+  
+    <div class="col-md-3 mb-4">
+  <div class="card" >
+  <img src="assets/images/delicacies/mae-mu-kID9sxbJ3BQ-unsplash.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cookies & Biscuits</h5>
+    <p class="card-text">Simple treats,endless joy.</p>
+    <a href="#cookies" class="btn btn-primary">Explore cookies</a>
+  </div>
+  </div>
+</div>
+
+  </div>
+  </div>
+</section>
+
+
+
+<!-- CAKES & CHEESECAKES -->
+<section class="delicacy-products" id="cakes">
+    <div class="container">
+        <h2>Cakes & Cheesecakes</h2>
+        <p class="section-intro">Sweet treats for your special moments.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/jacob-thomas-6jHpcBPw7i8-unsplash.jpg"
+                         class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p>Rich and delicious chocolate layers.</p>
+                        <p class="delicacy-price">₹499</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-nati-87264186-30018812.jpg"
+                         class="card-img-top" alt="Celebration Cake">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Celebration Cake</h5>
+                        <p>A beautiful cake for happy occasions.</p>
+                        <p class="delicacy-price">₹699</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-reginaferraz-6133315.jpg" class="card-img-top" alt="Red Velvet Cake">
+        <div class="card-body text-center">
+            <h5 class="card-title">Red Velvet Cake</h5>
+            <p>Soft red velvet layers with creamy frosting.</p>
+            <p class="delicacy-price">₹549</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/leyli-sadeqian-CWburPtXtHM-unsplash.jpg" class="card-img-top" alt="Vanilla Cake">
+        <div class="card-body text-center">
+            <h5 class="card-title">Vanilla Dream Cake</h5>
+            <p>A light and fluffy vanilla celebration cake.</p>
+            <p class="delicacy-price">₹399</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-gizem-gokce-1072613075-37678304.jpg" class="card-img-top" alt="Strawberry Cheesecake">
+        <div class="card-body text-center">
+            <h5 class="card-title">Strawberry Cheesecake</h5>
+            <p>Creamy cheesecake with a fruity twist.</p>
+            <p class="delicacy-price">₹379</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-diego-romero-471613950-17558644.jpg"
+                         class="card-img-top" alt="Cheesecake">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Creamy Cheesecake</h5>
+                        <p>Smooth, creamy, and delightful.</p>
+                        <p class="delicacy-price">₹349</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHOCOLATES -->
+<section class="delicacy-products" id="chocolates">
+    <div class="container">
+        <h2>Chocolates</h2>
+        <p class="section-intro">Little bites of chocolate happiness.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-nam-nguyen-2160013572-36572429.jpg"
+                         class="card-img-top" alt="Chocolate Truffles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Truffles</h5>
+                        <p>Soft chocolate treats for every mood.</p>
+                        <p class="delicacy-price">₹249</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-sinarz97-35902463.jpg" class="card-img-top" alt="Chocolate Gift Box">
+        <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Gift Box</h5>
+            <p>A sweet assortment for someone special.</p>
+            <p class="delicacy-price">₹449</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-rita-georgina-ferenci-2158465701-35395002.jpg" class="card-img-top" alt="Dark Chocolate">
+        <div class="card-body text-center">
+            <h5 class="card-title">Dark Chocolate Bites</h5>
+            <p>Rich dark chocolate for chocolate lovers.</p>
+            <p class="delicacy-price">₹199</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-karola-g-5386671.jpg" class="card-img-top" alt="Chocolate Fudge">
+        <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Fudge</h5>
+            <p>Soft, rich, and wonderfully chocolatey.</p>
+            <p class="delicacy-price">₹279</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-olenka-pasichnyk-325097313-14275553.jpg"
+                         class="card-img-top" alt="Chocolate Treats">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Treat Box</h5>
+                        <p>A lovely box of sweet surprises.</p>
+                        <p class="delicacy-price">₹399</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-planka-20461040.jpg"
+                         class="card-img-top" alt="Chocolate Dessert">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Delight</h5>
+                        <p>A rich treat for chocolate lovers.</p>
+                        <p class="delicacy-price">₹299</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PASTRIES -->
+<section class="delicacy-products" id="pastries">
+    <div class="container">
+        <h2>Pastries</h2>
+        <p class="section-intro">A little sweetness in every slice.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/braggsdiner-F8RKds2YdqA-unsplash.jpg"
+                         class="card-img-top" alt="Chocolate Pastry">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Pastry</h5>
+                        <p>Chocolate layers topped with creamy frosting.</p>
+                        <p class="delicacy-price">₹99</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-gondaliyajenish-18692571.jpg"
+                         class="card-img-top" alt="Cream Pastry">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cream Pastry</h5>
+                        <p>Light, soft, and filled with sweetness.</p>
+                        <p class="delicacy-price">₹89</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-gizem-gokce-1072613075-37678304.jpg" class="card-img-top" alt="Strawberry Pastry">
+        <div class="card-body text-center">
+            <h5 class="card-title">Strawberry Pastry</h5>
+            <p>A soft pastry with sweet strawberry flavour.</p>
+            <p class="delicacy-price">₹119</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-nano-erdozain-120534369-28895989.jpg" class="card-img-top" alt="Butterscotch Pastry">
+        <div class="card-body text-center">
+            <h5 class="card-title">Butterscotch Pastry</h5>
+            <p>Creamy sweetness with a crunchy finish.</p>
+            <p class="delicacy-price">₹109</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-minchephoto-6880219.jpg" class="card-img-top" alt="Coffee Pastry">
+        <div class="card-body text-center">
+            <h5 class="card-title">Coffee Pastry</h5>
+            <p>A delicate coffee-flavoured dessert.</p>
+            <p class="delicacy-price">₹129</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-valeriya-14107.jpg"
+                         class="card-img-top" alt="Fruit Pastry">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fruit Pastry</h5>
+                        <p>A sweet pastry with a fruity touch.</p>
+                        <p class="delicacy-price">₹109</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COOKIES & BISCUITS -->
+<section class="delicacy-products" id="cookies">
+    <div class="container">
+        <h2>Cookies & Biscuits</h2>
+        <p class="section-intro">Perfect little treats for tea time.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/mae-mu-kID9sxbJ3BQ-unsplash.jpg"
+                         class="card-img-top" alt="Chocolate Chip Cookies">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate Chip Cookies</h5>
+                        <p>Crunchy cookies with chocolate chips.</p>
+                        <p class="delicacy-price">₹149</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/vE9G7_tHscro_0gr-wqOr0A_hzBS-TXyPI34vYIITJRCVIxSg7lYJmkgmk6ZfRp0IJfzs4xKtayEG1X8nEonwp29LQQ_RrD25L0I4g3A-1YDBC4cqjA64m6G-wSp3MsCF3CI_uCSRFNeersn9YvZtskd_bxhjEWrDJanJLVbPCqIrO5J7Zk8TBa-wacMRz3K.jfif"
+                         class="card-img-top" alt="Chocolate Biscuits">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chocolate croissant</h5>
+                        <p>A crunchy snack for sweet cravings.</p>
+                        <p class="delicacy-price">₹99</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-kubra-2162493612-38262756.jpg" class="card-img-top" alt="Oat Cookies">
+        <div class="card-body text-center">
+            <h5 class="card-title">Oat Cookies</h5>
+            <p>Crunchy cookies for your everyday snack.</p>
+            <p class="delicacy-price">₹139</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-agustina-r-street-353574760-17358380.jpg" class="card-img-top" alt="Coconut Biscuits">
+        <div class="card-body text-center">
+            <h5 class="card-title">Coconut Biscuits</h5>
+            <p>Light, crisp biscuits with coconut flavour.</p>
+            <p class="delicacy-price">₹119</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="assets/images/delicacies/pexels-solodsha-8105039.jpg" class="card-img-top" alt="Butter Shortbread">
+        <div class="card-body text-center">
+            <h5 class="card-title">Butter Shortbread</h5>
+            <p>Classic buttery biscuits with a crisp bite.</p>
+            <p class="delicacy-price">₹159</p>
+            <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/delicacies/pexels-meggy-kadam-aryanto-3797063-11464568.jpg"
+                         class="card-img-top" alt="Butter Cookies">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Butter Cookies</h5>
+                        <p>Simple, buttery, and delicious.</p>
+                        <p class="delicacy-price">₹129</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <h4>FLORETIQUE 🌷</h4>
+                <p>Little blooms, beautiful feelings.</p>
+                <p>Sweet treats and thoughtful gifts for every occasion.</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="flowers.html">Flowers</a></p>
+                <p><a href="delicacies.html">Delicacies</a></p>
+                <p><a href="gifts.html">Gifts</a></p>
+                <p><a href="occasions.html">Occasions</a></p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-envelope"></i> hello@floretique.com</p>
+                <p><i class="fas fa-heart"></i> Made for your special moments</p>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 FLORETIQUE. Made with love 💗
+        </p>
+    </div>
+</footer>
+
+
+
 
     
 
