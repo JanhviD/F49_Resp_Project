@@ -15,7 +15,7 @@
     padding-left: 10%;
 }
 .hero{
-        background-color: rgba(255, 255, 255, 0.80);
+        background-color: rgba(255, 255, 255, 0.80);;
         padding: 35px;
         max-width: 520px;
 }
@@ -43,8 +43,12 @@
     text-decoration: none;
 }
 .navbar{
+        width: 100%;
         background-color: #fff9f5 !important;
         padding: 15px;
+        position: sticky;
+        top: 20px;
+        
 }
 .navbar-brand{
         color: #493b3f !important;
@@ -67,19 +71,19 @@
         background-color: #a95670;
         border-color: #a95670;
 }
-.hero .btn-outline-dark{
+/* .hero .btn-outline-dark{
         color: #493b3f;
         border-color: #493b3f;
 }
 .hero .btn-outline-dark:hover{
         background-color: #493b3f;
         color:white
-}
+} */
 
 @media (max-width: 768px){
 
 .d1{
-        min-width: 80vh;
+        min-width: 60vh;
         padding: 30px;
         justify-content: center;
         background-position: center;
@@ -157,18 +161,18 @@
     margin-bottom: 10px;
 }
 
-/* contact-cta */
-.contact-cta{
+/* contact */
+.contact{
         text-align: center;
         padding: 70px 20px;
         background-color: #fff9f5;
 }
-.contact-cta h2{
+.contact h2{
         color: #493b3f;
         font-family: Georgia,serif;
         margin-bottom: 15px;
 }
-.contact-cta p{
+.contact p{
         color: #493b3f;
         margin-bottom: 45px;
 }
@@ -194,4 +198,11 @@
 .copyright{
         text-align: center;
         font-size: 15px;
+}
+.wp-icon{
+        color: green;
+        font-size: 70px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
 }
